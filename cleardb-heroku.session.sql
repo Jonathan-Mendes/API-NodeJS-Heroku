@@ -1,0 +1,7 @@
+CREATE TABLE PRODUTOS( 
+    id INT(11) PRIMARY KEY,
+    name VARCHAR(32) NOT NULL,
+    city VARCHAR(32),
+    age VARCHAR(7),
+    CONSTRAINT key1 PRIMARY KEY (name)
+);

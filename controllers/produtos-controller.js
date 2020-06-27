@@ -7,10 +7,10 @@ exports.getProdutos = async (req, res, next) => {
             quantidade: result.length,
             produtos: result.map(prod => {
                 return {
-                    id_produto: prod.id_produto,
+                    id: prod.id,
                     nome: prod.nome,
                     preco: prod.preco,
-                    imagem_produto: prod.imagem_produto,
+                    // imagem_produto: prod.imagem_produto,
                     request: {
                         tipo: 'GET',
                         descricao: 'Retorna os detalhes de um produto específico',
