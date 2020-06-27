@@ -37,7 +37,7 @@ router.post(
     upload.single('produto_imagem'),
     ProdutosController.postProduto
 );
-router.get('/:id_produto', ProdutosController.getUmProduto);
+router.get('/:id', ProdutosController.getUmProduto);
 router.patch('/', login.obrigatorio, ProdutosController.updateProduto);
 router.delete('/', login.obrigatorio, ProdutosController.deleteProduto);
 
