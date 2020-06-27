@@ -31,12 +31,7 @@ const upload = multer({
 });
 
 router.get('/', ProdutosController.getProdutos);
-router.post(
-    '/',
-    login.obrigatorio,
-    upload.single('produto_imagem'),
-    ProdutosController.postProduto
-);
+router.post('/',ProdutosController.postProduto);
 router.get('/:id', ProdutosController.getUmProduto);
 router.patch('/', ProdutosController.updateProduto);
 router.delete('/', ProdutosController.deleteProduto);
