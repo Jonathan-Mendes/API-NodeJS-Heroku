@@ -14,7 +14,7 @@
             "username": "b6dccc9a47d8a3"
         },
         {
-            "database": "jonath58_Teste",
+            "database": "Teste",
             "driver": "MySQL",
             "mysqlOptions": {
                 "authProtocol": "default"
@@ -24,7 +24,7 @@
             "port": 3306,
             "previewLimit": 50,
             "server": "jonathanmendes.com.br",
-            "username": "jonath58_user"
+            "username": "user"
         }
     ]
 }

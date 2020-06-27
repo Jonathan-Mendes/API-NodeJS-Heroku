@@ -4,7 +4,6 @@ exports.getProdutos = async (req, res, next) => {
     try {
         const result = await mysql.execute("SELECT * FROM produtos;")
         const response = {
-            quantidade: result.length,
             produtos: result.map(prod => {
                 return {
                     id: prod.id,
@@ -30,7 +29,7 @@ exports.postProduto = (req, res, next) => {
         const response = {
             mensagem: 'Produto inserido com sucesso',
             produtoCriado: {
-                id: result.insertId,
+                id: req.body.id,
                 nome: req.body.nome,
                 preco: req.body.preco,
             }
