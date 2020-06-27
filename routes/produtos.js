@@ -38,7 +38,7 @@ router.post(
     ProdutosController.postProduto
 );
 router.get('/:id', ProdutosController.getUmProduto);
-// router.patch('/', login.obrigatorio, ProdutosController.updateProduto);
-// router.delete('/', login.obrigatorio, ProdutosController.deleteProduto);
+router.patch('/', ProdutosController.updateProduto);
+router.delete('/', ProdutosController.deleteProduto);
 
 module.exports = router;
