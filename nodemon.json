@@ -3,10 +3,9 @@
         "MYSQL_USER" : "b6dccc9a47d8a3",
         "MYSQL_PASSWORD" : "907154a1",
         "MYSQL_DATABASE" : "heroku_8a15fa086853ca3",
-        "MYSQL_HOST" : "us-cdbr-east-02.cleardb.com",
+        "MYSQL_HOST" : "localhost",
         "MYSQL_PORT" : 3306,
 
-        "JWT_KEY" : "segredo",
-        "URL_API" : "http://localhost:3000/"
+        "JWT_KEY" : "segredo"
     }
 }
